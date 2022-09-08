@@ -1,3 +1,4 @@
+
 # Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
@@ -57,30 +58,42 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+  - Met de screen reader moet je (door te tabben) eerst langs alle navigatie- en productcategorieënlinks, voordat je bij de main content (producten) van de homepagina komt.
+  - De zoekbalk bovenaan de pagina kan niet geselecteerd/gefocust worden door te navigeren met tab.
+  
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  - Het duurt extreem lang om door alle links heen te navigeren om bij de (belangrijkste) content te komen.
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  - Een content skip link bovenaan de website die ervoor zorgt dat je de onnodige links over kan slaan.
+  - Misschien de navigatiebalk niet bovenaan de pagina zetten, ookal is dat voor 'normale' gebruikers niet optimaal, het is een workaround.
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  - Met muis en toetsenbord is de website goed te gebruiken zonder grote problemen.
+  - Sommige links (bv die aan de linker navbar) zijn relatief klein in verhouding tot de rest van de website, wat de leesbaarheid een beetje kan beperken.
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  - Als iemand bv parkinson's heeft (of in ieder geval 2 trillende armen/handen) kan het erg lastig zijn om de cursor goed te bedienen met de touchpad of een muis. Als de trillingen heel heftig zijn, kan het ook dat gebruik van het toetsenbord problemen geeft als verkeerde toetsaanslagen.
+  - Als sommige vingers niet goed te bewegen zijn of meetrillen, kan het ook lastiger zijn om een website op je mobiele telefoon te gebruiken. Zo'n klein scherm met kleine links en buttons. 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  - Knoppen en links groter maken, zodat de x- en y-verschuiving van de trillingen er niet meer voor zorgen dat je naar de knop/link klikt.
+  - Mobiele (en misschien ook tablet) website grotere buttons en links geven. 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  Diabetes bril: 
+  - Het lijkt wel alsof er allemaal sneeuwvlokjes voor mijn ogen zitten. Het is erg lastig om kleine letters te lezen zonder mijn hoofd mee te bewegen.
+  - Het is lastig om het overzicht te houden over de hele website, doordat bijna overal het gezichtsbeeld
+  - Ook is het heel lastig om met je ogen grote afstanden af te leggen (helemaal van de linker- naar de rechterkant van de pagina bijvoorbeeld).
+  Tunnel vision bril:
+  - Je hele gezichtsveld wordt zwart behalve een heel klein puntje in het midden van elk ook. Dit maakt het bijna onmodgelijk om snel dingen te vinden en overzicht te houden op de website. 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  - Zorgen dat tekst groot genoeg is om duidelijk leesbaar te zijn voor mensen met zichtproblemen door diabetes (ook niet te groot, want dan is het lastig te lezen).
+  
 </details>
 
 
@@ -91,13 +104,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/skatepro-p1.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/skatepro-p1.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/skatepro-p1.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
