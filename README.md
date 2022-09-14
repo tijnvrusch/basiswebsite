@@ -104,17 +104,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/skatepro-home-mobile.PNG" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/skatepro-hamburger-nav.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <!-- ### wellicht nog een dynamisch deel (bijv filter):  -->
+  <!-- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
 
 </details>
 
+<details>
+<summary>
+Bevindingen symposium 12 september
+</summary>
+- Skip to content link voor mensen die dmv screen readers de site gebruiken (dit kan als eerste linkje in de footer helemaal bovenaan de pagina, zodat je er meteen komt als je op tab drukt).
+- Het is belangrijk om goede, semantisch correcte HTML te schrijven voordat je doorgaat naar de CSS. Anders zul je later je CSS weer opnieuw aan moeten passen nadat je je HTML gefixt hebt.
+- Geen onnodige alt-text achter afbeeldingen (of andere items), en als je wel alt-text gebruikt moet die zo relevant mogelijk is. Zo blijft de website toegankelijk voor mensen die bijvoorbeeld slechtziend zijn en de site alleen kunnen gebruiken als screen reader.
+- Vaak kun je, door de toegankelijkheid voor een specifieke doelgroep een veel grotere doelgroep bereiken van mensen die vergelijkbare problemen hebben oid, en dus (in mindere mate) dezelfde gebruikersproblemen ervaren. 
+- Ik merkte op dat de website van SkatePro.nl verandert naar de desktop versie van de site bij een schermbreedte van 1250px;
 
+</details>
 
 
 
@@ -124,17 +134,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb mijn basiskennis van HTML en CSS al aardig opgeschroefd. Flexbox en grids maken nu eindelijk sense door de handige oefensites Flexbox Froggy en Grid Garden!
+  Ik wil deze week ook aan de slag gaan met FlukeOut om mijn kennis over selectors te testen en uit te breiden.
+  Tot nu toe heb ik deze nieuwe manieren geleerd om selectors toe te passen: p > a & p + a.
+  Ik hoorde dat we vanaf volgende week aan de slag gaan met JavaScript. Daar ben ik nu nog helemaal niet goed in, dus dat kan nog wel eens intimiderend worden. Het is echter wel belangrijk dat ik (in ieder geval) een redelijke fundering leg voor simpele dingen in JS. Dit helpt ook om een gevoel en inzicht te krijgen in programmeren in zijn algemeenheid en zal het makkelijker maken om nieuwe computertalen op te pakken die complexer zijn zijn JavaScript, maar wel gebruikmaken van vergelijkbare patronen of inzichten.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      | student 2          | student 3     | student 4                |
+  | Bente          | Ryan               | Lisa          | Tijn                     |
+  | HTML accessible| Voortgang          | Voortgang     | hamburger menu uitklappen|
+  | maken. + iets  |                    |               | / JavaScript basics               |
+  | specifieks     | ...                | ...           | ...              |
 
 
   ### Verslag van meeting
