@@ -146,8 +146,8 @@ Bevindingen symposium 12 september
   | student 1      | student 2          | student 3     | student 4                |
   | Bente          | Ryan               | Lisa          | Tijn                     |
   | HTML accessible| Voortgang          | Voortgang     | hamburger menu uitklappen|
-  | maken. + iets  |                    |               | / JavaScript basics               |
-  | specifieks     | ...                | ...           | ...              |
+  | maken. + iets  |                    |               | / JavaScript basics      |
+  | specifieks     | ...                | ...           | ...                      |
 
 
   ### Verslag van meeting
