@@ -172,6 +172,7 @@ Bevindingen symposium 12 september
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Ik doe op de een of andere manier iets fout bij het linken naar mijn img elementen.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
