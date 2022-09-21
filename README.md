@@ -104,10 +104,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/skatepro-home-mobile.PNG" width="375px" alt="breakdown van de hele pagina">
+  <img src="./readme-images/skatepro-home-mobile.PNG" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/skatepro-hamburger-nav.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="./readme-images/skatepro-hamburger-nav.png" width="375px" alt="breakdown van een dynamisch deel">
 
   <!-- ### wellicht nog een dynamisch deel (bijv filter):  -->
   <!-- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
@@ -273,19 +273,19 @@ Bevindingen symposium 12 september
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="./readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="./readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
