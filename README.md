@@ -176,11 +176,11 @@ Bevindingen symposium 12 september
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      | student 2          | student 3       | student 4        |
+  | Tijn           | ---                | ---             | ---              |
+  | images links?  | en dit             | en ik dit       | en dan ik dat    |
+  | href > ./?     | dit als er tijd is | nog een punt    | dit wil ik zeker |
+  | ...            | ...                | ...             | ...              |
 
 
   ### Verslag van meeting
@@ -273,7 +273,7 @@ Bevindingen symposium 12 september
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="./readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
