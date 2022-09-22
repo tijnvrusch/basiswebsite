@@ -133,7 +133,7 @@ nav ul {
 	display: flex;
 	background-color: var(--default-color);
 	align-items: center;
-	padding-top: 1.5em;
+	
 }
 
 nav ul li {
@@ -170,17 +170,17 @@ transition: 0s;
 
 main section {
 	display: grid;
-	grid-template-columns: repeat( auto-fit, minmax(16em, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
 }
 
 
 .productOverzichtTitel {
-	padding-left:16px;
+	padding-left: 16px;
 }
 
 /* Grid container van alle product blokjes */
 .productOverzicht {
-	
+
 }
 
 /* Grid contrainer van het blokje zelf */
