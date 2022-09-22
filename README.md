@@ -188,9 +188,7 @@ Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes k
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - 
 - ...
 
 </details>

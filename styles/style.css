@@ -119,8 +119,6 @@ header section:last-of-type ul li {
 	flex-grow: 1;
 }
 
-
-
 header li {
 	
 }
@@ -155,17 +153,17 @@ nav a:link {
 }
 
 nav a:visited {
-color: var(--text-color-dark);
+	color: var(--text-color-dark);
 }
 
 nav a:hover {
-color: crimson;
+		color: crimson;
 transition: 0.5s;
 }
 
 nav a:active {
-color: yellow;
-transition: 0s;
+	color: yellow;
+	transition: 0s;
 }
 
 main section {
