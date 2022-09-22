@@ -1,2 +1,3 @@
 // JavaScript Document
-console.log("hi");
+
+// var hamburgerKnop = document.querySelector("header button i");

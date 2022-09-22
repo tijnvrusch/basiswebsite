@@ -2,7 +2,7 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing: border-box;  
 }
 
 button, summary {
@@ -39,97 +39,164 @@ button, summary {
 }
 
 body {
-	color:var(--text-color);
-	background-color:var(--background-color);
-	padding:0;
-	margin:0;
-	font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+	color: var(--text-color);
+	background-color: var(--background-color);
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans','Helvetica Neue',sans-serif;
 	line-height: 1.5rem;
 }
 
 h2 {
-	font-family: 'Sofia';
+	font-family: 'Open Sans','Helvetica Neue',sans-serif;
 	font-size: 22px;
 }
 
 section svg {
-	margin-right:-260px;
-	margin-bottom:-120px;
+	margin-right: -260px;
+	margin-bottom: -120px;
 }
 
-.svgTitel {
-	display:flex;
-	align-items: center;
-}
+/* FOOTER CONTAINER */
 
-footer {
-	display:block;
-	
-}
-footer ul{
+footer ul {
 	position: relative;
 	left: -1em;
 	right: -1em;
 	height: 3em;
-	display:flex;
-	margin:0;
-	background-color:#f1f1f1;
+	display: flex;
+	margin: 0;
+	background-color: #f1f1f1;
 	align-items: center;
 }
 
+/* FOOTER ITEMS */
+
 footer ul li {
-	flex-grow:1;
+	flex-grow: 1;
 	list-style-type: none;
+}
+
+/* HEADER WRAPPER */
+
+header div {
+	display: flex;
+}
+
+header ul {
+	list-style: none;
+	text-decoration: none;
+}
+
+/* HEADER LINKER CONTAINER */
+
+header section:first-of-type ul {
+	display: flex;
+}
+
+header section:first-of-type ul li {
+	flex-grow: 1;
+}
+
+/* HEADER ZOEKBALK */
+
+header section:nth-of-type(2) ul {
+
+}
+
+header section:nth-of-type(2) ul li {
+
+}
+
+
+/* HEADER RECHTER CONTAINER */
+
+header section:last-of-type ul {
+	display: flex;
+}
+
+header section:last-of-type ul li {
+	flex-grow: 1;
+}
+
+
+
+header li {
+	
+}
+
+header img {
+	height: 3em;
 }
 
 nav ul {
-	display:flex;
+	display: flex;
 	background-color: var(--default-color);
 	align-items: center;
+	padding-top: 1.5em;
 }
 
 nav ul li {
-	flex-grow:1;
 	list-style-type: none;
-	gap:10%;	
+	height: 3em;
+	flex-grow: 1;
+	text-align: center;
 }
 
-nav a:link{
-	color:white;
+nav ul li a {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+nav a:link {
+	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-nav a:visited{
+nav a:visited {
 color: var(--text-color-dark);
-text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
 color: crimson;
-transition:0.5s;
-
+transition: 0.5s;
 }
 
-nav a:active{
-color:yellow;
-transition:0s;
+nav a:active {
+color: yellow;
+transition: 0s;
 }
 
 main section {
-
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(16em, 1fr));
 }
 
-main section article {
-	display:block;
-	border: 4px #000;
+
+.productOverzichtTitel {
+	padding-left:16px;
 }
 
-main section ul {
-	display:grid;
-	grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+/* Grid container van alle product blokjes */
+.productOverzicht {
+	
 }
 
-main section ul li {
+/* Grid contrainer van het blokje zelf */
+article {
+	padding-left: 0;
+	margin: 0;
+	
+	
+}
+
+article ul {
+	display: grid;
+	grid-template-columns: 70% 30%;
+}
+
+article ul li {
 	list-style: none;
+	border: .1em solid black;
 }

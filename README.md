@@ -183,6 +183,7 @@ Ik doe op de een of andere manier iets fout bij het linken naar mijn img element
   | href > ./?     | dit als er tijd is | nog een punt    | dit wil ik zeker |
   | ...            | ...                | ...             | ...              |
 
+Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes komt het niet uit.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
