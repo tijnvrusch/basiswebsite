@@ -1,13 +1,16 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing: border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
-button, summary {
+button,
+summary {
 	cursor: pointer;
-	color:red;
+	color: red;
 }
 
 
@@ -19,136 +22,180 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--text-color-light:#000;
-	--text-color-dark:#fff;
-	--background-color-light:#fff;
-	--background-color-dark:#000;
-	--default-color:#3d3d3d;
+	--text-color-light: #000;
+	--text-color-dark: #fff;
+	--background-color-light: #fff;
+	--background-color-dark: #000;
+	--default-color: #3d3d3d;
 }
 
 
 
 
 /****************/
-/* JOUW STYLING */
+/* MIJN STYLING */
 /****************/
 
-/* jouw code */
-
 * {
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	color: var(--text-color);
 	background-color: var(--background-color);
 	padding: 0;
-	margin: 0;
-	font-family: 'Open Sans','Helvetica Neue',sans-serif;
-	line-height: 1.5rem;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+
 }
 
 h2 {
-	font-family: 'Open Sans','Helvetica Neue',sans-serif;
-	font-size: 22px;
+	font-size: 1.4em;
+	padding: 1em 1em 2em 1em;
 }
 
-section svg {
-	margin-right: -260px;
-	margin-bottom: -120px;
-}
 
 /* FOOTER CONTAINER */
 
 footer ul {
-	position: relative;
+	display: flex;
 	left: -1em;
 	right: -1em;
 	height: 3em;
-	display: flex;
-	margin: 0;
 	background-color: #f1f1f1;
 	align-items: center;
+	padding-left: 2em;
 }
 
 /* FOOTER ITEMS */
 
 footer ul li {
 	flex-grow: 1;
+	justify-content: space-around;
 	list-style-type: none;
 	font-size: 0.8em;
 }
 
 /* HEADER WRAPPER */
+header {
+	
+}
 
 header div {
 	display: flex;
+	gap: 1em;
 }
 
-header ul {
-	list-style: none;
-	text-decoration: none;
+header div section {
+	padding: 1em 0.6em 1em 0.6em;
 }
 
 /* HEADER LINKER CONTAINER */
 
-header section:first-of-type ul {
+header section:first-of-type {
 	display: flex;
 }
 
-header section:first-of-type ul li {
+header section:first-of-type button {
 	flex-grow: 1;
 }
 
-/* HEADER ZOEKBALK */
 
-header section:nth-of-type(2) ul {
+header button {
+	background-color: var(--background-color-light);
+	border: 0;
+}
+
+/* HAMBURGER MENU IMG*/
+section:first-of-type button > img {
+	padding-top:0.4em;
+}
+	
+
+/* LOGO IMG */
+
+section:first-of-type button a img {
+	padding-left: 1em;
+}
+
+
+
+/* HEADER MIDDELSTE CONTAINER (ZOEKBALK) */
+
+header section:nth-of-type(2) {
 
 }
 
-header section:nth-of-type(2) ul li {
+header section:nth-of-type(2) form {
+	display: flex;
+	flex-grow: 1; 
+	height: 100%;
+}
 
+header section:nth-of-type(2) form button {
+	flex-grow:1;
+}
+
+
+
+section form input {
+	height: 95%;
+	width: 100%;
+	border-radius: 1em;
+	border-width: 0.25em;
+	border-color: black;
+	padding: 0 1em 0 1em;
+	font-size: 1em;
+	min-width: 8em;
 }
 
 
 /* HEADER RECHTER CONTAINER */
 
-header section:last-of-type ul {
+header section:last-of-type {
+	margin-left: auto;
+}
+
+header section:last-of-type {
 	display: flex;
 }
 
-header section:last-of-type ul li {
-	flex-grow: 1;
-}
-
-header li {
-	
-}
-
 header img {
-	height: 3em;
+	height: 3.8em;
+}
+
+/* NAVBAR  */
+header nav {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	
+	transform: translateX(100%);
 }
 
 nav ul {
 	display: flex;
 	background-color: var(--default-color);
-	align-items: center;
-	flex-direction: row;
-	/* padding-top: 1.5em; */
-	
 }
 
 nav ul li {
 	list-style-type: none;
-	height: 3em;
+	/* height: 3em; */
 	flex-grow: 1;
 	text-align: center;
+	padding: 0;
 	padding-top: 1.3em;
-	padding-bottom:1.3em;
+	padding-bottom: 1.3em;
 }
 
 nav ul li a {
 	font-size: 1.2em;
-	font-weight: bold;
 }
 
 nav a:link {
@@ -162,8 +209,8 @@ nav a:visited {
 }
 
 nav a:hover {
-		color: crimson;
-transition: 0.5s;
+	color: crimson;
+	transition: 0.5s;
 }
 
 nav a:active {
@@ -171,35 +218,54 @@ nav a:active {
 	transition: 0s;
 }
 
+/* GRID PARENT VAN ALLE PRODUCT BLOKJES */
+
 main section {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+	gap: 2em;
 }
 
 
-.productOverzichtTitel {
-	padding-left: 16px;
+section.productOverzichtTitel {
+
 }
 
 /* Grid container van alle product blokjes */
 .productOverzicht {
-
+	
 }
 
 /* Grid contrainer van het blokje zelf */
 article {
-	padding-left: 0;
-	margin: 0;
-	
+
+
 	
 }
 
 article ul {
 	display: grid;
 	grid-template-columns: 70% 30%;
+	padding: 0;
+	
 }
 
 article ul li {
 	list-style: none;
 	border: .1em solid black;
+}
+
+/* TABLET FORMAAT OF GROTER */
+
+@media (min-width: 1000px){
+	header nav {
+		position: static;
+		transform: translateX(0);
+	}
+
+	
+	
+	header button {
+		display: none;
+	}
 }
