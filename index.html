@@ -15,21 +15,24 @@
 		<li>Snelle levering</li>
 		<li>Gratis verzending vanaf €59</li>
 		<li>365 dagen bedenktijd</li>
-		<li>X</li>
+		<li>&#x2715</li>
 	</ul>
 </footer>
 <script defer src="scripts/script.js"></script>
 <body>
+	<a href="#mainContent" id="skipLink">Skip to main content</a>
 	<header> 
 		<!-- HEADER WRAPPER -->
 		<div>
 			<!-- LINKER HEADER CONTAINER -->
 			<section>
 				<button>
-					<img src="./images/menu.svg">
+					<a href="#">
+						<img src="./images/menu.svg" id="hamburger">
+					</a>
 				</button>
 				<button>
-					<a href="./index.html">
+					<a href="./index.html" id="logo">
 						<img src="./images/logo.svg" alt="SkatePro logo">
 					</a>
 				</button>
@@ -37,7 +40,7 @@
 			<!-- ZOEKBALK -->
 			<section>
 				<form action="">
-					<input type="text" placeholder="Zoeken..."></input>
+					<input type="text" placeholder="Zoeken..." class="zoekVeld"></input>
 					<button type="submit" class="zoekKnop">
 						<img src="./images/search.svg" alt="zoeken">
 					</button>
@@ -46,7 +49,7 @@
 			<!-- RECHTER HEADER CONTAINER -->
 			<section>
 				<button>
-					<img src="./images/user-icon.svg" alt="Account" class="">
+					<img src="./images/user-icon.svg" alt="Account">
 				</button>
 				<button>
 					<img src="./images/favorite_border.svg" alt="Bewaard">
@@ -58,6 +61,7 @@
 		</div>
 		<!-- NAVBAR (alleen op desktop) -->
 		<nav>
+			<!-- desktop navbar is verborgen voor screen readers / internetgebruikers met tab -->
 			<ul>
 				<li>
 					<a href="./index.html">Item 1</a>
@@ -71,7 +75,7 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main id="mainContent">
 		<section class="productOverzichtTitel">
 			<h2>
 				Nu populair bij andere bezoekers!
@@ -79,263 +83,188 @@
 		</section>
 		<section class="productOverzicht">
 			<article>
-				<ul>
-					<li>
-						<h1>
+					<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+					</img>
+					<section>
+						<a href="#">
 							Tony Hawk 180 Series Complete Skateboard 8.0"
-						</h1>
-					</li>
-					<li>
-						<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-						</img>
-					</li>
-					<li>
+						</a>
 						<p>
 							€39,95
 						</p>
-					</li>	
-					<li>
+					</section>
+					<button>
+						+
+					</button>
+			</article>
+			<article>
+				<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<section>
+					<a href="#">
+						Tony Hawk 180 Series Complete Skateboard 8.0"
+					</a>
+					<p>
+						€39,95
+					</p>
+				</section>
+				<button>
+					+
+				</button>
+			</article>
+			<article>
+				<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<section>
+					<a href="#">
+						Tony Hawk 180 Series Complete Skateboard 8.0"
+					</a>
+					<p>
+						€39,95
+					</p>
+				</section>
+				<button>
+					+
+				</button>
+			</article>
+			<article>
+				<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<section>
+					<a href="#">
+						Tony Hawk 180 Series Complete Skateboard 8.0"
+					</a>
+					<p>
+						€39,95
+					</p>
+				</section>
+				<button>
+					+
+				</button>
+				</article>			
+				<article>
+				<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<section>
+					<a href="#">
+						Tony Hawk 180 Series Complete Skateboard 8.0"
+					</a>
+					<p>
+						€39,95
+					</p>
+				</section>
+				<button>
+					+
+				</button>
+			</article>
+			<article>
+				<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<section>
+					<a href="#">
+						Tony Hawk 180 Series Complete Skateboard 8.0"
+					</a>
+					<p>
+						€39,95
+					</p>
+				</section>
+				<button>
+					+
+				</button>
+			</article>
+			</section>
+			<section class="productOverzicht">
+				<article>
+						<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+						</img>
+						<section>
+							<a href="#">
+								Tony Hawk 180 Series Complete Skateboard 8.0"
+							</a>
+							<p>
+								€39,95
+							</p>
+						</section>
 						<button>
 							+
 						</button>
-					</li>	
-				</ul>
-			</article>
-			<article>
-					<ul>
-						<li>
-							<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-							</img>
-						</li>
-						<li>
-							<h2>
-								Tony Hawk 180 Series Complete Skateboard 8.0"
-							</h2>
-						</li>
-						<li>
-							<p>
-								Nog [X] op voorraad!
-							</p>
-						</li>	
-						<li>
-							<h3>
-								€39,95
-							</h3>
-							<button>
-								+
-							</button>
-						</li>	
-					</ul>
 				</article>
-			<article>
-					<ul>
-						<li>
-							<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-							</img>
-						</li>
-						<li>
-							<h2>
-								Tony Hawk 180 Series Complete Skateboard 8.0"
-							</h2>
-						</li>
-						<li>
-							<h3>
-								€39,95
-							</h3>
-							<button>
-								+
-							</button>
-						</li>	
-						<li>
-							<p>
-								Nog [X] op voorraad!
-							</p>
-						</li>	
-					</ul>
+				<article>
+					<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+					</img>
+					<section>
+						<a href="#">
+							Tony Hawk 180 Series Complete Skateboard 8.0"
+						</a>
+						<p>
+							€39,95
+						</p>
+					</section>
+					<button>
+						+
+					</button>
 				</article>
-			<article>
-					<ul>
-						<li>
-							<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-							</img>
-						</li>
-						<li>
-							<h2>
-								Tony Hawk 180 Series Complete Skateboard 8.0"
-							</h2>
-						</li>
-						<li>
-							<h3>
-								€39,95
-							</h3>
-							<button>
-								+
-							</button>
-						</li>	
-						<li>
-							<p>
-								Nog [X] op voorraad!
-							</p>
-						</li>	
-					</ul>
+				<article>
+					<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+					</img>
+					<section>
+						<a href="#">
+							Tony Hawk 180 Series Complete Skateboard 8.0"
+						</a>
+						<p>
+							€39,95
+						</p>
+					</section>
+					<button>
+						+
+					</button>
 				</article>
-			<article>
-					<ul>
-						<li>
-							<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-							</img>
-						</li>
-						<li>
-							<h2>
-								Tony Hawk 180 Series Complete Skateboard 8.0"
-							</h2>
-						</li>
-						<li>
-							<h3>
-								€39,95
-							</h3>
-							<button>
-								+
-							</button>
-						</li>	
-						<li>
-							<p>
-								Nog [X] op voorraad!
-							</p>
-						</li>	
-					</ul>
+				<article>
+					<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+					</img>
+					<section>
+						<a href="#">
+							Tony Hawk 180 Series Complete Skateboard 8.0"
+						</a>
+						<p>
+							€39,95
+						</p>
+					</section>
+					<button>
+						+
+					</button>
+					</article>			
+					<article>
+					<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+					</img>
+					<section>
+						<a href="#">
+							Tony Hawk 180 Series Complete Skateboard 8.0"
+						</a>
+						<p>
+							€39,95
+						</p>
+					</section>
+					<button>
+						+
+					</button>
 				</article>
-			<article>
-					<ul>
-						<li>
-							<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-							</img>
-						</li>
-						<li>
-							<h2>
-								Tony Hawk 180 Series Complete Skateboard 8.0"
-							</h2>
-						</li>
-						<li>
-							<h3>
-								€39,95
-							</h3>
-							<button>
-								+
-							</button>
-						</li>	
-						<li>
-							<p>
-								Nog [X] op voorraad!
-							</p>
-						</li>	
-					</ul>
+				<article>
+					<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+					</img>
+					<section>
+						<a href="#">
+							Tony Hawk 180 Series Complete Skateboard 8.0"
+						</a>
+						<p>
+							€39,95
+						</p>
+					</section>
+					<button>
+						+
+					</button>
 				</article>
-			<article>
-					<ul>
-						<li>
-							<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-							</img>
-						</li>
-						<li>
-							<h2>
-								Tony Hawk 180 Series Complete Skateboard 8.0"
-							</h2>
-						</li>
-						<li>
-							<h3>
-								€39,95
-							</h3>
-							<button>
-								+
-							</button>
-						</li>	
-						<li>
-							<p>
-								Nog [X] op voorraad!
-							</p>
-						</li>	
-					</ul>
-				</article>
-			<article>
-					<ul>
-						<li>
-							<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-							</img>
-						</li>
-						<li>
-							<h2>
-								Tony Hawk 180 Series Complete Skateboard 8.0"
-							</h2>
-						</li>
-						<li>
-							<h3>
-								€39,95
-							</h3>
-							<button>
-								+
-							</button>
-						</li>	
-						<li>
-							<p>
-								Nog [X] op voorraad!
-							</p>
-						</li>	
-					</ul>
-				</article>
-			<article>
-					<ul>
-						<li>
-							<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-							</img>
-						</li>
-						<li>
-							<h2>
-								Tony Hawk 180 Series Complete Skateboard 8.0"
-							</h2>
-						</li>
-						<li>
-							<h3>
-								€39,95
-							</h3>
-							<button>
-								+
-							</button>
-						</li>	
-						<li>
-							<p>
-								Nog [X] op voorraad!
-							</p>
-						</li>	
-					</ul>
-				</article>
-			<article>
-					<ul>
-						<li>
-							<img src="./images/skateboard-product-img.jpeg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-							</img>
-						</li>
-						<li>
-							<h2>
-								Tony Hawk 180 Series Complete Skateboard 8.0"
-							</h2>
-						</li>
-						<li>
-							<h3>
-								€39,95
-							</h3>
-							<button>
-								+
-							</button>
-						</li>	
-						<li>
-							<p>
-								Nog [X] op voorraad!
-							</p>
-						</li>	
-					</ul>
-				</article>
-			</section>
+				</section>
 		</main>
 	</body>
 </html>

@@ -48,6 +48,30 @@ body {
 	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+main {
+	transition: 1s;
+}
+
+#skipLink {
+	position: absolute;
+	transform:translateY(-1000%);
+}
+
+#skipLink:focus {
+	transform:translateY(0%);
+	
+}
+input:focus {
+	background-color: hotpink;
+}
+
+
+button:focus {
+	background-color: hotpink;
+  }
+  
+
+
 h1 {
 
 }
@@ -62,26 +86,45 @@ h2 {
 
 footer ul {
 	display: flex;
-	left: -1em;
-	right: -1em;
-	height: 3em;
-	background-color: #f1f1f1;
 	align-items: center;
+	left: 0;
+	right: 0;
+	height: 4em;
+	background-color: #f1f1f1;
 	padding-left: 2em;
+	padding-top: 1em;
+	transform: translateY(-1em);
 }
 
 /* FOOTER ITEMS */
 
 footer ul li {
 	flex-grow: 1;
-	justify-content: space-around;
 	list-style-type: none;
 	font-size: 0.8em;
 }
 
+footer ul li:last-of-type {
+	color: var(--default-color);
+	font-size: 1.4em;
+}
+
+footer.anders {
+	margin-top: -3.5em;
+	transition: 1.4s;
+	/* https://cubic-bezier.com/ */
+	transition-timing-function: cubic-bezier(.45,-0.96,0,1);
+	width: 100%;
+	margin-bottom: 0;
+}
+
+
 /* HEADER WRAPPER */
 header {
-	
+	position: sticky;
+	margin-top: -1em;
+	top: 0;
+	background-color: var(--background-color-light);
 }
 
 header div {
@@ -90,7 +133,7 @@ header div {
 }
 
 header div section {
-	padding: 1em 0.6em 1em 0.6em;
+	padding: 1em 0 1em 0;
 }
 
 /* HEADER LINKER CONTAINER */
@@ -103,30 +146,34 @@ header section:first-of-type button {
 	flex-grow: 1;
 }
 
-
 header button {
 	background-color: var(--background-color-light);
 	border: 0;
 }
 
+header button img {
+	padding-left: 0;
+}
 /* HAMBURGER MENU IMG*/
-section:first-of-type button > img {
-	padding-top:0.4em;
+#hamburger {
+	height: 100%;
+	margin-top: 0;
 }
 	
 
 /* LOGO IMG */
 
-section:first-of-type button a img {
-	padding-left: 1em;
+#logo {
+	padding-left: 0.5em;
+	padding-right: 2.5em;
+	padding-bottom: 0.4em;
+
 }
-
-
 
 /* HEADER MIDDELSTE CONTAINER (ZOEKBALK) */
 
 header section:nth-of-type(2) {
-
+	flex-grow: 1;
 }
 
 header section:nth-of-type(2) form {
@@ -136,20 +183,18 @@ header section:nth-of-type(2) form {
 }
 
 header section:nth-of-type(2) form button {
-	flex-grow:1;
+
 }
 
-
-
 section form input {
-	height: 95%;
+	height: 90%;
 	width: 100%;
-	border-radius: 1em;
+	border-radius: 1.2em;
 	border-width: 0.25em;
 	border-color: black;
 	padding: 0 1em 0 1em;
 	font-size: 1em;
-	min-width: 8em;
+	min-width: 4.7em;
 }
 
 
@@ -164,7 +209,8 @@ header section:last-of-type {
 }
 
 header img {
-	height: 3.8em;
+	height: 4em;
+	padding-left: 0.4em;
 }
 
 /* NAVBAR  */
@@ -237,27 +283,51 @@ section.productOverzichtTitel {
 }
 
 /* Grid contrainer van het blokje zelf */
+
 article {
-
-
-	
-}
-
-article ul {
 	display: grid;
-	grid-template-columns: 70% 30%;
+	grid-template-columns: 85% 15%;
 	padding: 0;
 	
 }
 
-article ul li {
-	list-style: none;
+article img {
+	grid-column-start: 1;
+	grid-row-start: 1;
 	border: .1em solid black;
+}
+
+article section {
+	grid-row-start: 2;
+	border: .1em solid black;
+	grid-column-start: 1;
+}
+
+
+article button {
+	grid-column-start: 2;
+	grid-row-start: 2;
+	border: .1em solid black;
+}
+
+/* MEDIA QUERIES */
+
+/* KLEINER DAN 500px */
+
+@media (max-width: 600px){
+
+	.zoekVeld {
+		display: none;
+	}
+
+	.zoekKnop {
+		justify-self: flex-end;
+	}
 }
 
 /* TABLET FORMAAT OF GROTER */
 
-@media (min-width: 1000px){
+/* @media (min-width: 1000px){
 	header nav {
 		position: static;
 		transform: translateX(0);
@@ -268,4 +338,4 @@ article ul li {
 	header button {
 		display: none;
 	}
-}
+} */

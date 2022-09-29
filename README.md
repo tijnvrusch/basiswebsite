@@ -205,28 +205,38 @@ Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes k
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  Mijn site werkt nu al veel beter met een screen reader / tab dan de originele site. Het was bij het origineel vrijwel onmogelijk om door het navigatiemenu te tabben, om bij de rest van de website te komen. Zo moeten mensen zonder een muis (of met een beperking) eerst super lang luisteren naar allemaal onnodige linkjes in de navbar, voordat ze bij de content van de pagina aankomen. 
+
+
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  Ik merkte al snel dat mijn afbeeldingen (zowel het logo als de menu buttons en de productfoto's) geen (juiste) alt-text hebben. Een screen reader zou dan de volledige naam van de afbeeldingen voorlezen ipv alleen de nuttige alt-text. 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  Ik heb, om de navigatie van de website gemakkelijker te maken voor beperkte gebruikers, een skip link button toegevoegd bovenaan mijn HTML. Deze link is automatisch verborgen (uit het scherm getransleerd), totdat je begint met tabben en de link dus focus krijgt. Wanneer je dan vervolgens op Enter drukt, skip je naar de main content van de pagina.
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  Shocks (of elastiekjes) maken een groot verschil in de behendigheid van iemand's handen en vingers. Bij lichte shocks of trillingen is het vaak nog wel mogelijk (ookal is het omslachtig) om het toetsenbord te gebruiken als tekst input en link / button navigation. 
+  Gebruik van een muis of touchpad is in mijn beleving als helemaal lastig, voor sommigen zelfs vrijwel onmogelijk. Het lijkt me daarom voor de meeste mensen die motorisch beperkt zijn (trillingen, schokjes whatever) erg belangrijk dat de website toegankelijk genoeg is om goed te kunnen navigeren met een screen reader of tab.
+
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Het is met die tunnel vision bril vrijwel onmogelijk om je cursor te vinden op het scherm. Het zou misschien helpen als mensen die op deze manier slechtziend zijn een grotere cursor te zien krijgen zodat ze iets makkelijker kunnen zien waar ze nu bezig zijn. Verder zullen ze uiteraard zoveel mogelijk gebruikmaken van tab, als alternatieve manier om de links / buttons van de pagina af te gaan. 
 
 </details>
 
