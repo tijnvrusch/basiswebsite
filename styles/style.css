@@ -286,8 +286,13 @@ section.productOverzichtTitel {
 
 article {
 	display: grid;
-	grid-template-columns: 85% 15%;
+	grid-template-columns: 1fr 15%;
 	padding: 0;
+	border: .1em solid black;
+	
+}
+
+article.productContainer {
 	
 }
 
@@ -295,19 +300,23 @@ article img {
 	grid-column-start: 1;
 	grid-row-start: 1;
 	border: .1em solid black;
+
 }
 
 article section {
+	grid-column-start: 1;
 	grid-row-start: 2;
 	border: .1em solid black;
-	grid-column-start: 1;
+	height: 3em;
 }
+
 
 
 article button {
 	grid-column-start: 2;
 	grid-row-start: 2;
 	border: .1em solid black;
+	height: 3.6em;
 }
 
 /* MEDIA QUERIES */
