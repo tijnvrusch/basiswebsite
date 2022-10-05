@@ -291,6 +291,7 @@ header nav {
 	transition-timing-function: cubic-bezier(.67,0,.21,1);
 	padding-top: 10em;
 	padding-left: 2em;
+	z-index: 9;
 }
 
 .geopend ul li a {
@@ -428,7 +429,7 @@ article button {
 	transition: 0.2s;
 }
 
-/* CONTACTPAGINA  */*****************************************
+/* CONTACTPAGINA  */
 
 #contactoverzichtTitel {
 	line-height: 1.5;
@@ -441,7 +442,6 @@ article button {
 }
 
 #contactForm {
-	z-index: -1;
 }
 
 #contactOverzicht form {
@@ -459,6 +459,7 @@ article button {
 	
 	flex-grow: 1;
 }
+
 #formFlex div input {
 	height: 2em;
 	min-width: 100%;
@@ -517,7 +518,6 @@ section#formBlock {
 #contactOverzicht input {
 	min-width: 100%;
 	padding: 0.2em 0.8em 0.2em 0.8em;
-	z-index: -10;
 }
 
 #verzoekVeld {
@@ -626,7 +626,7 @@ section#formBlock {
 	}
 
 	div section:nth-of-type(2){
-margin-left: 10em;
+		margin-left: 10em;
 		justify-content: center;
 	}
 	
@@ -638,9 +638,25 @@ margin-left: 10em;
 	
 }
 
-@media (prefers-reduced-motion) {
+/* REDUCED MOTION */
 
+@media (prefers-reduced-motion) {
+	.geopend { 
+		transform: translateX(0);
+		padding-top: 10em;
+		padding-left: 2em;
+		z-index: 9;
+	}
+
+	.hamburGeopend {
+		position: static;
+		z-index: 10;
+		transform: rotate(270deg);
+		background-color: var(--background-color-light);
+	}
 }
+
+/* DARK MODE */
 
 @media (prefers-color-scheme: dark) {
 	
