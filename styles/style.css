@@ -437,11 +437,12 @@ article button {
 
 #contactOverzicht {
 	line-height: 1.5;
-	display: block;
+	display:block;
 	padding: 0 8% 0 8%;
 }
 
 #contactForm {
+
 }
 
 #contactOverzicht form {
@@ -495,9 +496,10 @@ section#formBlock {
 }
 
 
-#contactOverzicht section p {
-	padding-top: 1em;
+#contactOverzicht p {
+	padding-top: 1.6em;
 	padding-bottom: 1em;
+	padding-left: 1em;
 }
 
 #contactOverzicht h3 {
@@ -579,6 +581,7 @@ section#formBlock {
 	div section:nth-of-type(2){
 		padding-left: 1em;
 	}
+	
 	div section:nth-of-type(2) img {
 		padding-left: 1em;
 	}
@@ -641,18 +644,8 @@ section#formBlock {
 /* REDUCED MOTION */
 
 @media (prefers-reduced-motion) {
-	.geopend { 
-		transform: translateX(0);
-		padding-top: 10em;
-		padding-left: 2em;
-		z-index: 9;
-	}
-
-	.hamburGeopend {
-		position: static;
-		z-index: 10;
-		transform: rotate(270deg);
-		background-color: var(--background-color-light);
+	:root {
+		transition: none;
 	}
 }
 
