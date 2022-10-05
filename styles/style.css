@@ -241,19 +241,21 @@ header nav {
 	top: 0;
 	bottom: 0;
 	z-index: 1;
-	transform: translateX(100%);
+	transform: translateX(-100%);
 	background-color: var(--background-color-light); 
 }
 
 .geopend {
 	transform: translateX(0);
+	transition: 0.8s;
+	transition-timing-function: cubic-bezier(.92,0,.43,1);
 }
 
 .hamburGeopend {
-	position: absolute;
+	position: static;
 	z-index: 10;
 	transform: rotate(90deg);
-	transition: 1s;
+	transition: 0.9s;
 	transition-timing-function: cubic-bezier(.83,-0.59,.45,1.01);
 	background-color: var(--background-color-light);
 
