@@ -60,8 +60,15 @@ main {
 
 #skipLink:focus {
 	transform: translateY(0%);
-	color: white;
+	color: var(--text-color-light);
+	background-color: var(--background-accent-color-light);
 	z-index: 15;
+	font-size: 3em;
+	left: 0;
+	right: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
 	
 }
 input:focus {
@@ -169,8 +176,8 @@ header button a {
 }
 
 header button a img {
-	margin-left: 0;
-	padding-left: 0;
+	margin: 0;
+
 }
 
 /* HAMBURGER MENUUTJEEEEE */
@@ -180,9 +187,10 @@ header button a img {
 /* LOGO IMG */
 
 #logo {
-	padding-left: 1.2em;
-	padding-right: 2.6em;
-	padding-bottom: 0.4em;
+	margin-left: 1.2em;
+	margin-right: 2.6em;
+	margin-bottom: 0.4em;
+
 
 
 
@@ -230,7 +238,6 @@ header section:last-of-type {
 
 header img {
 	height: 4em;
-	margin-left: 0.4em;
 }
 
 /* NAVBAR  */
@@ -255,13 +262,14 @@ header nav {
 	position: static;
 	z-index: 10;
 	transform: rotate(90deg);
-	transition: 0.9s;
+	transition: 0.85s;
 	transition-timing-function: cubic-bezier(.83,-0.59,.45,1.01);
 	background-color: var(--background-color-light);
 
 }
 
 .hamburGeopend:focus {
+
 }
 
 
@@ -295,12 +303,12 @@ nav a:visited {
 }
 
 nav a:hover {
-	color: crimson;
+	color: orange;
 	transition: 0.5s;
 }
 
 nav a:active {
-	color: yellow;
+	color: cyan;
 	transition: 0s;
 }
 
