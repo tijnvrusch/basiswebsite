@@ -19,6 +19,7 @@
 	</ul>
 </footer>
 <script defer src="scripts/script.js"></script>
+
 <body>
 	<a href="#mainContent" id="skipLink">Skip to main content</a>
 	<header>
@@ -27,10 +28,10 @@
 			<!-- LINKER HEADER CONTAINER -->
 			<section>
 				<button id="hamburger">
-					<img src="./images/menu.svg">
+					<img src="./images/menu.svg" alt="Navigatie Menu">
 				</button>
 				<button>
-					<a href="./index.html" id="logo" aria-hidden="true">
+					<a href="./index.html" id="logo" tabindex=-1>
 						<img src="./images/logo.svg" alt="SkatePro logo">
 					</a>
 				</button>
@@ -38,9 +39,9 @@
 			<!-- ZOEKBALK -->
 			<section>
 				<form action="">
-					<input type="text" placeholder="Zoeken..." class="zoekVeld"></input>
-					<button type="submit" class="zoekKnop" aria-hidden="true">
-						<a href="./index.html">
+					<input type="text" placeholder="Zoeken..." id="zoekVeld"></input>
+					<button type="submit" id="zoekKnop">
+						<a href="./index.html" tabindex=-1>
 							<img src="./images/search.svg" alt="Zoeken">
 						</a>
 					</button>
@@ -49,17 +50,17 @@
 			<!-- RECHTER HEADER CONTAINER -->
 			<section>
 				<button>
-					<a href="./index.html">
+					<a href="./index.html" tabindex=-1>
 						<img src="./images/user-icon.svg" alt="Account">
 					</a>
 				</button>
 				<button>
-					<a href="./index.html">
+					<a href="./index.html" tabindex=-1>
 						<img src="./images/favorite_border.svg" alt="Bewaard">
 					</a>
 				</button>
 				<button>
-					<a href="./index.html">
+					<a href="./index.html" tabindex=-1>
 						<img src="./images/shopping_cart_outlined.svg" alt="Mandje">
 					</a>
 				</button>
@@ -70,35 +71,32 @@
 			<!-- desktop navbar is verborgen voor screen readers / internetgebruikers met tab -->
 			<ul>
 				<li>
-					<a href="./index.html">Item 1</a>
+					<a href="./index.html">Skates</a>
 				</li>
 				<li>
-					<a href="./index.html">Item 2</a>
+					<a href="./index.html">Steppen</a>
 				</li>
 				<li>
-					<a href="./index.html">Item 3</a>
+					<a href="./index.html">BMX</a>
 				</li>
 				<li>
-					<a href="./index.html">Item 4</a>
+					<a href="./index.html">Boards</a>
 				</li>
 				<li>
-					<a href="./index.html">Item 5</a>
-				</li>
-				<li>
-					<a href="./index.html">Item 6</a>
+					<a href="./contact.html">Contact</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<main id="mainContent">
-		<section class="productOverzichtTitel">
+		<section id="productOverzichtTitel">
 			<h2>
 				Nu populair bij andere bezoekers!
 			</h2>
 		</section>
-		<section class="productOverzicht">
+		<section id="productOverzicht">
 			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				<img src="./images/skateboard1.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
 				</img>
 				<a href="#">
 					<h3>
@@ -115,7 +113,41 @@
 				</div>
 			</article>
 			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				<img src="./images/skateboard2.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Jart 170 Series Complete Skateboard 7.75"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard3.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Alaii 175 Series Complete Skateboard 7.5"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard1.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
 				</img>
 				<a href="#">
 					<h3>
@@ -132,7 +164,41 @@
 				</div>
 			</article>
 			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				<img src="./images/skateboard2.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Jart 170 Series Complete Skateboard 7.75"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard3.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Alaii 175 Series Complete Skateboard 7.5"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard1.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
 				</img>
 				<a href="#">
 					<h3>
@@ -149,7 +215,41 @@
 				</div>
 			</article>
 			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				<img src="./images/skateboard2.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Jart 170 Series Complete Skateboard 7.75"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard3.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Alaii 175 Series Complete Skateboard 7.5"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard1.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
 				</img>
 				<a href="#">
 					<h3>
@@ -166,7 +266,41 @@
 				</div>
 			</article>
 			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				<img src="./images/skateboard2.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Jart 170 Series Complete Skateboard 7.75"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard3.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Alaii 175 Series Complete Skateboard 7.5"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard1.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
 				</img>
 				<a href="#">
 					<h3>
@@ -183,7 +317,41 @@
 				</div>
 			</article>
 			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				<img src="./images/skateboard2.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Jart 170 Series Complete Skateboard 7.75"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard3.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Alaii 175 Series Complete Skateboard 7.5"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard1.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
 				</img>
 				<a href="#">
 					<h3>
@@ -200,7 +368,41 @@
 				</div>
 			</article>
 			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				<img src="./images/skateboard2.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Jart 170 Series Complete Skateboard 7.75"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard3.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Alaii 175 Series Complete Skateboard 7.5"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard1.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
 				</img>
 				<a href="#">
 					<h3>
@@ -217,7 +419,24 @@
 				</div>
 			</article>
 			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				<img src="./images/skateboard2.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				</img>
+				<a href="#">
+					<h3>
+						Jart 170 Series Complete Skateboard 7.75"
+					</h3>
+				</a>
+				<div>
+					<p>
+						€39,95
+					</p>
+					<button>
+						+
+					</button>
+				</div>
+			</article>
+			<article>
+				<img src="./images/skateboard1.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
 				</img>
 				<a href="#">
 					<h3>
@@ -234,232 +453,11 @@
 				</div>
 			</article>
 			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
+				<img src="./images/skateboard3.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
 				</img>
 				<a href="#">
 					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
-					</h3>
-				</a>
-				<div>
-					<p>
-						€39,95
-					</p>
-					<button>
-						+
-					</button>
-				</div>
-			</article>
-			<article>
-				<img src="./images/globe-full-on-8.0-skateboard.jpg" alt="Tony Hawk 180 Series Complete Skateboard 8.0">
-				</img>
-				<a href="#">
-					<h3>
-						Tony Hawk 180 Series Complete Skateboard 8.0"
+						Alaii 175 Series Complete Skateboard 7.5"
 					</h3>
 				</a>
 				<div>

@@ -25,10 +25,12 @@ summary {
 	--text-color-dark: #fff;
 	--background-color-light: #fff;
 	--background-color-dark: #000;
-	--background-accent-color-light: #9f9f9f;
-	--background-accent-color-dark: #2b2b2b;
-	--header-color-light: #fff;
-	--header-color-dark: #2b2b2b;
+	--background-accent-color-light: #f3f3f3;
+	--background-accent-color-dark: #121212;
+	--background-accent-2-light: #e5e5e5;
+	--background-accent-2-dark: #0a0a0a;
+	/* --header-color-light: #fff;
+	--header-color-dark: #1a1a1a; */
 }
 
 
@@ -45,12 +47,13 @@ summary {
 
 body {
 	color: var(--text-color-light);
-	background-color: var(--background-accent-color-light);
+	background-color: var(--background-color-light);
 	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	filter: invert(0);
 }
 
 main {
-	
+	background-color: var(--background-accent-color-light);
 }
 
 #skipLink {
@@ -71,22 +74,37 @@ main {
 	text-align: center;
 	
 }
+
 input:focus {
+	border: 0.4em solid cyan;
+}
+
+
+
+article button:focus {
+	color: var(--background-color-light);
+	border-color: darkred;
+	color: darkred;
+}
+
+article button:active {
 	background-color: darkred;
-	border-color: var(--background-color-light);
+	color: var(--background-color-light);
+	
 }
 
 
-button:focus {
-	background-color: darkred;
-	border-color: var(--background-color-light);
+header section button:not(#hamburger):hover {
+	transform: scale(0.9);
+	transition: 0.4s;
+	transition-timing-function: cubic-bezier(.01,0,.13,1.27);
 }
 
-button:active {
-	background-color: yellow;
-	border-color: var(--background-color-light);
+article button:hover {
+	transform: rotate(90deg);
+	transition: 0.4s;
 }
-  
+
 
 
 h1 {
@@ -94,16 +112,17 @@ h1 {
 }
 
 h2 {
-	font-size: 1.4em;
-	padding: 1em 1em 2em 1em;
+	font-size: 1.6em;
+	padding: 1em;
 }
 
 
 /* FOOTER CONTAINER */
 footer {
-	background-color: var(--header-color-dark);
+	background-color: var(--background-accent-2-light);
 	max-height: 3em;
 }
+
 footer ul {
 	display: flex;
 	align-items: center;
@@ -120,14 +139,15 @@ footer ul {
 footer ul li {
 	flex-grow: 1;
 	list-style-type: none;
-	font-size: 0.8em;
-	justify-self: flex-end;
+	font-size: 0.9em;
+	padding-left: 5%;
 }
 
 footer ul li:last-of-type {
 	font-size: 1.4em;
-	padding: 0;
+	padding: 0 0.5em 0 0;
 	margin: 0;
+	flex-grow: 0.15;
 }
 
 footer.anders {
@@ -169,6 +189,7 @@ header button {
 	background-color: var(--header-color-light);
 	border: 0;
 	max-width: 145px;
+	border-radius: 1em;
 }
 
 header button a {
@@ -181,19 +202,25 @@ header button a img {
 }
 
 /* HAMBURGER MENUUTJEEEEE */
-#hamburger {
 
+#hamburger img {
+	height: 4.4em;
 }
+
+/* https://css-tricks.com/almanac/selectors/n/not/ */
+
+#hamburger:not(.hamburGeopend) {
+	transition: 0.4s;
+	transform: rotate(0deg);
+}
+
+
 /* LOGO IMG */
 
-#logo {
-	margin-left: 1.2em;
-	margin-right: 2.6em;
-	margin-bottom: 0.4em;
-
-
-
-
+#logo img {
+	padding-left: 1.2em;
+	padding-right: 2.8em;
+	padding-bottom: 0.4em;
 }
 
 /* HEADER MIDDELSTE CONTAINER (ZOEKBALK) */
@@ -212,17 +239,20 @@ header section:nth-of-type(2) form button {
 
 }
 
-/* .zoekVeld  */
+/* #zoekVeld  */
 
 section form input {
 	height: 90%;
 	width: 100%;
 	border-radius: 1.2em;
 	border-width: 0.25em;
-	border-color: var(--background-color-light);
+	border-color: var(--background-color-dark);
 	padding: 0 1em 0 1em;
 	font-size: 1em;
 	min-width: 4.7em;
+	max-width: 480px;
+	opacity: 1;
+	transform: translateX(0);
 }
 
 
@@ -237,7 +267,7 @@ header section:last-of-type {
 }
 
 header img {
-	height: 4em;
+	height: 4.4em;
 }
 
 /* NAVBAR  */
@@ -248,48 +278,60 @@ header nav {
 	top: 0;
 	bottom: 0;
 	z-index: 1;
-	transform: translateX(-100%);
+	transform: translateX(-300%);
 	background-color: var(--background-color-light); 
+	padding-bottom: 10em;
+	animation-timing-function: cubic-bezier(0,1.05,.51,.99);
+	transition: 0.4s;
 }
 
-.geopend {
+.geopend { 
 	transform: translateX(0);
-	transition: 0.8s;
-	transition-timing-function: cubic-bezier(.92,0,.43,1);
+	transition: 0.95s;
+	transition-timing-function: cubic-bezier(.67,0,.21,1);
+	padding-top: 10em;
+	padding-left: 2em;
+}
+
+.geopend ul li a {
+	opacity: 1;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .hamburGeopend {
 	position: static;
 	z-index: 10;
-	transform: rotate(90deg);
-	transition: 0.85s;
+	transform: rotate(270deg);
+	transition: 0.8s;
 	transition-timing-function: cubic-bezier(.83,-0.59,.45,1.01);
 	background-color: var(--background-color-light);
-
 }
 
-.hamburGeopend:focus {
 
+.hamburGeopend:focus {
+	
 }
 
 
 nav ul {
-	background-color: var(--default-color);
-	margin-top: 8em;
 
 }
 
 nav ul li {
+	padding: 3em 2em 3em 2em;
 	list-style-type: none;
 	/* height: 3em; */
 	flex-grow: 1;
-	padding: 3em 2em 3em 2em;
 	font-size: 1.3em;
-	background-color: var(--background-color-light);
 }
 
 nav ul li a {
 	font-size: 1.2em;
+	font-weight: bold;
+	
 }
 
 nav a:link {
@@ -303,13 +345,19 @@ nav a:visited {
 }
 
 nav a:hover {
-	color: orange;
-	transition: 0.5s;
+	color: lightcoral;
+	padding-left: 0.6em;
+	text-decoration: underline;
+	transition: 0.4s;
 }
 
 nav a:active {
-	color: cyan;
-	transition: 0s;
+	
+}
+nav ul li a:active {
+	color: darkred;
+	transform: scale(0.4);
+	
 }
 
 /* GRID PARENT VAN ALLE PRODUCT BLOKJES */
@@ -317,18 +365,14 @@ nav a:active {
 main section {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-	gap: 1em;
-	padding-left: 0.4em;
-	padding-right: 0.4em;
-}
-
-/* Grid container van alle product blokjes */
-.productOverzicht {
-
+	gap: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 
-section.productOverzichtTitel {
+
+section#productOverzichtTitel {
 	
 }
 
@@ -338,57 +382,191 @@ section.productOverzichtTitel {
 article {
 	display: grid;
 	padding: 0;
-	border: .1em solid var(--header-color-light);
 	height: min-content;
+	border-radius: 1.4em;
+	background-color: var(--background-color-light);
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 
 article img {
-	border: .1em solid black;
 	justify-self: center;
 	max-width: 100%;
-	border-radius: 1em;
+	border-radius: 1.2em 1.2em 0 0;
+	padding-top: 0.4em;
 }
 
 section article div {
 	display: flex;
-	align-items: center;
+}
+
+article h3 {
+	padding: 1.2em 0.4em 0.4em 1.3em;
+	line-height: 1.8;
 }
 
 article p {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	flex-grow: 1;
+	padding: 0.4em 0.4em 0.8em 1.1em;
+	font-size: 1.4em;
+	color: red;
+	font-weight: 350;
 }
 
 
 article button {
-	border: .1em solid black;
+	border: .1em solid var(--background-color-dark);
 	height: 100%;
 	font-size: 2em;
-	color: black;
+	color: var(--background-accent-color-dark);
+	background-color: var(--background-color-light);
 	flex-grow: 1;
-	max-width: 1.35em;
+	max-width: 1.65em;
+	border-radius: 10em;
+	/* korte transition voor een geinig klik feedback effect dat opvallender is als je langer klikt */
+	transition: 0.2s;
+}
+
+/* CONTACTPAGINA  */*****************************************
+
+#contactoverzichtTitel {
+	line-height: 1.5;
+}
+
+#contactOverzicht {
+	line-height: 1.5;
+	display: block;
+	padding: 0 8% 0 8%;
+}
+
+#contactForm {
+	z-index: -1;
+}
+
+#contactOverzicht form {
+	margin: 0;
+}
+
+#formFlex {
+	display:flex;
+	margin: 2em 0 0 0;
+	justify-content: space-between;
+	
+}
+
+#formFlex div {
+	
+	flex-grow: 1;
+}
+#formFlex div input {
+	height: 2em;
+	min-width: 100%;
+}
+
+#formBlock {
+	display: block;
+}
+
+section#formFlex {
+	padding-left: 0
+}
+
+section#formBlock {
+	padding-left: 0;
+}
+
+
+#contactOverzicht form button {
+	border: 0.3em solid var(--text-color-light);
+	border-radius: 0.8em;
+	padding: 0.4em;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-bottom: 30em;
+}
+
+#contactOverzicht form button:hover {
+	color: red;
+	transform: scale(1.3);
+	border-color: red;
+	padding: 0.4em;
+}
+
+
+#contactOverzicht section p {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#contactOverzicht h3 {
+	padding-bottom: 0.6em;
+	
+}
+
+#contactOverzicht section h3:first-of-type {
+	font-size: 1.4em;
+	
+}
+
+#contactOverzicht section h3:nth-of-type(2) {
+	font-size: 1.2em;
+	color: lightcoral;
+}
+
+#contactOverzicht input {
+	min-width: 100%;
+	padding: 0.2em 0.8em 0.2em 0.8em;
+	z-index: -10;
+}
+
+#verzoekVeld {
+	min-height: 500px;
+}
+
+#flexButton {
+	display: flex;
+	margin-top: 1.2em;
+	justify-content: space-between;
+}
+
+#flexButton button {
+
 }
 
 
 
-/* MEDIA QUERIES */
+#rood {
+	color: red;
+	padding-right:0;
+}
+
+/* MEDIA QUERIES *//*******************************************************************************
 
 /* KLEINER DAN 600px */
 
 @media (max-width: 600px){
-	main section {
-		gap: 2em;
+	
+	
+	
+	#zoekVeld {
+		opacity: 0;
+		transform: translateX(5em);
+		transform: scale(0.4);
+		transition: 0.3s;
+		
 	}
 	
-	
-	.zoekVeld {
-		display: none;
-	}
-	
-	.zoekKnop {
+	#zoekKnop {
 		margin-left: auto;
 	}
+
+	#logo img {
+
+	}
 	
+	form section {
+	}
 }
 
 @media (min-width: 600px){
@@ -397,7 +575,7 @@ article button {
 		max-width: 90em;
 		margin-inline: auto;
 	}
-
+	
 	div section:nth-of-type(2){
 		padding-left: 1em;
 	}
@@ -409,61 +587,112 @@ article button {
 /* TABLET FORMAAT OF GROTER */
 
 @media (min-width: 1000px){
+
 	header nav {
 		position: static;
 		transform: translateX(0);
+		padding-bottom: 0;
 	}
 	
 	header nav ul {
 		display: flex;
+		padding: 0;
+		margin: 0;
 	}
 	
-	
+	header nav ul li {
+		background-color: var(--background-color-light);
+		padding: 1em 0 1em 3em;
+	}
 
+	nav ul li a {
+		
+		
+	}
+
+	#hamburger {
+		display: none;
+	}
+
+	#logo {
+		padding-left: 3.6em;
+		padding-right: 12em;
+
+	}
+
+	header button {
+		padding-left: 0.4em;
+		padding-right: 0.4em;
+	}
+
+	div section:nth-of-type(2){
+margin-left: 10em;
+		justify-content: center;
+	}
+	
+	#productOverzicht {
+		padding: 0.6em 2em 0.6em 2em;
+	}
 	
 	
 	
 }
 
+@media (prefers-reduced-motion) {
+
+}
+
 @media (prefers-color-scheme: dark) {
-
+	
 	:root {
-	--text-color-light: #fff;
-	--text-color-dark: #000;
-	--background-color-light: #000;
-	--background-color-dark: #fff;
-	--default-color: #3d3d3d;
-	--background-accent-color-light: #1b1b1b;
-	--background-accent-color-dark: #9f9f9f;
-	--header-color-light: #fff;
+		--text-color-light: #fff;
+		--text-color-dark: #000;
+		--background-color-light: #000;
+		--background-color-dark: #fff;
+		--default-color: #3d3d3d;
+		--background-accent-color-light: #191919;
+		--background-accent-color-dark: #f3f3f3;
+		--background-accent-2-light: #0a0a0a;
+		--background-accent-2-dark: #e5e5e5;
+		
 	}
-
+	
 	#hamburger {
 		background-color: var(--background-color-dark);
 	}
-
+	
 	a {
 		color: var(--text-color-light);
 	}
-
+	
 	p {
 		color: var(--accent-color);
 	}
-
-	form input{
+	
+	section form input {
 		/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
 		filter: invert(1);
 		color: var(--background-color-light);
+		border-color: var(--background-color-light);
 	}
-
+	
 	header button {
 		/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
 		filter: invert(1);
 		background-color: var(--background-color-dark);
 	}
-
-	.productOverzicht article {
+	
+	#productOverzicht article {
 		border: 0;
 	}
+	
+	footer {
+		background-color: var(--background-accent-color-light);
+	} 
 
+	article button {
+		background-color: var(--background-accent-color-dark);
+		border-color: var(--background-accent-color-dark);
+		color: var(--background-accent-color-light);
+	}
 }
