@@ -174,7 +174,9 @@ Bevindingen symposium 12 september
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-Ik doe op de een of andere manier iets fout bij het linken naar mijn img elementen.
+Ik doe op de een of andere manier iets fout bij het linken naar mijn img elementen. Verder moet er nog veel gebeuren aan mijn website. <br>
+Ik moet nog veel doen aan mijn basic CSS indeling, maar ik boek wel goeie progressie met de navbar. Die werkt nu volledig responsive met een zoekbalk die meebeweegt en een hamburger die verdwijnt op desktop size. <br>
+Ik wil, als ik de CSS wat beter gefixt heb, een auto dark mode en een hamburger menu met animaties toevoegen <br>
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -268,10 +270,10 @@ Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes k
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik ben goed op weg, de header is het lastigste deel en daar ben ik bijna klaar mee.
+  - Ik moet nog een auto dark mode (misschien met een knop als dat lukt), een tweede pagina, betere content en een hamburger menu met animatie toevoegen.
+  - Verder moet ik nog een aantal kleine puntjes op de i zetten zoals dat ik ergens niet goed ingesprongen heb.
+  
 
 </details>
 
@@ -294,9 +296,11 @@ Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes k
   De buttons en zoekbalk zijn gemakkelijk te vinden met tab én je kunt zelfs naar de content van de pagina skippen met een skiplink. <br>
   Ik heb bij de kleurkeuze ook rekening gehouden met een hoog contrast voor onder andere slechtzienden. <br>
   Responsiveness: Ik ben erg trots op hoe responsive ik mijn website heb kunnen maken met behulp van flexbox Ik heb deze 5 weken echt super veel geleerd, vooral over flexbox, grid en positioning!<br>
-  Dark mode: Ik weet nu eindelijk hoe je media queries gebruikt (en snap nu vooral ook hoe het zit met min-width voor responsiveness).<br>
+  Dark mode: Ik had bedacht dat ik de PNG's van de buttons in mijn header kon inverten met filter: invert(1), zodat de zwarte icoontjes wit werden en de zoekbalk (en zijn border) ook goed aansluiten bij de rest van de dark mode styling. <br>
+  Ik weet nu eindelijk hoe je media queries gebruikt (en snap nu vooral ook hoe het zit met min-width voor responsiveness).<br>
 
-  
+
+
   <img src="./readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
