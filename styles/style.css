@@ -252,7 +252,6 @@ section form input {
 	min-width: 4.7em;
 	max-width: 480px;
 	opacity: 1;
-	transform: translateX(0);
 }
 
 
@@ -277,7 +276,7 @@ header nav {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	z-index: 1;
+	z-index: 9;
 	transform: translateX(-300%);
 	background-color: var(--background-color-light); 
 	padding-bottom: 10em;
@@ -500,6 +499,7 @@ section#formBlock {
 	padding-top: 1.6em;
 	padding-bottom: 1em;
 	padding-left: 1em;
+	font-weight: bold;
 }
 
 #contactOverzicht h3 {
@@ -678,13 +678,26 @@ section#formBlock {
 		color: var(--accent-color);
 	}
 	
+	
 	section form input {
+		color: var(--background-color-dark);
+		background-color: var(--background-color-dark);
+		border-color: var(--background-color-light);
+		/* HIER FILTER: INVERT(0) WEBHALEN FIXTE THE ISSUE  */
+		/* filter: invert(0); */
+	}
+	
+	header form input {
 		/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
 		filter: invert(1);
 		color: var(--background-color-light);
 		border-color: var(--background-color-light);
 	}
-	
+
+	#contactForm form input {
+		
+	}
+
 	header button {
 		/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
 		filter: invert(1);
