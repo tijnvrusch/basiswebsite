@@ -10,7 +10,6 @@
 button,
 summary {
 	cursor: pointer;
-	color: red;
 }
 
 
@@ -26,7 +25,10 @@ summary {
 	--text-color-dark: #fff;
 	--background-color-light: #fff;
 	--background-color-dark: #000;
-	--default-color: #3d3d3d;
+	--background-accent-color-light: #9f9f9f;
+	--background-accent-color-dark: #2b2b2b;
+	--header-color-light: #fff;
+	--header-color-dark: #2b2b2b;
 }
 
 
@@ -42,38 +44,46 @@ summary {
 }
 
 body {
-	color: var(--text-color);
-	background-color: var(--background-color);
-	padding: 0;
+	color: var(--text-color-light);
+	background-color: var(--background-accent-color-light);
 	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 main {
-	transition: 1s;
+	
 }
 
 #skipLink {
 	position: absolute;
-	transform:translateY(-1000%);
+	transform: translateY(-1000%);
 }
 
 #skipLink:focus {
-	transform:translateY(0%);
+	transform: translateY(0%);
+	color: white;
+	z-index: 15;
 	
 }
 input:focus {
-	background-color: hotpink;
+	background-color: darkred;
+	border-color: var(--background-color-light);
 }
 
 
 button:focus {
-	background-color: hotpink;
-  }
+	background-color: darkred;
+	border-color: var(--background-color-light);
+}
+
+button:active {
+	background-color: yellow;
+	border-color: var(--background-color-light);
+}
   
 
 
 h1 {
-
+	
 }
 
 h2 {
@@ -83,14 +93,16 @@ h2 {
 
 
 /* FOOTER CONTAINER */
-
+footer {
+	background-color: var(--header-color-dark);
+	max-height: 3em;
+}
 footer ul {
 	display: flex;
 	align-items: center;
 	left: 0;
 	right: 0;
 	height: 4em;
-	background-color: #f1f1f1;
 	padding-left: 2em;
 	padding-top: 1em;
 	transform: translateY(-1em);
@@ -102,18 +114,20 @@ footer ul li {
 	flex-grow: 1;
 	list-style-type: none;
 	font-size: 0.8em;
+	justify-self: flex-end;
 }
 
 footer ul li:last-of-type {
-	color: var(--default-color);
 	font-size: 1.4em;
+	padding: 0;
+	margin: 0;
 }
 
 footer.anders {
 	margin-top: -3.5em;
 	transition: 1.4s;
 	/* https://cubic-bezier.com/ */
-	transition-timing-function: cubic-bezier(.45,-0.96,0,1);
+	transition-timing-function: cubic-bezier(.82,-0.01,.23,1.5);
 	width: 100%;
 	margin-bottom: 0;
 }
@@ -122,14 +136,12 @@ footer.anders {
 /* HEADER WRAPPER */
 header {
 	position: sticky;
-	margin-top: -1em;
 	top: 0;
 	background-color: var(--background-color-light);
 }
 
 header div {
 	display: flex;
-	gap: 1em;
 }
 
 header div section {
@@ -147,26 +159,32 @@ header section:first-of-type button {
 }
 
 header button {
-	background-color: var(--background-color-light);
+	background-color: var(--header-color-light);
 	border: 0;
+	max-width: 145px;
 }
 
-header button img {
+header button a {
+
+}
+
+header button a img {
+	margin-left: 0;
 	padding-left: 0;
 }
-/* HAMBURGER MENU IMG*/
-#hamburger {
-	height: 100%;
-	margin-top: 0;
-}
-	
 
+/* HAMBURGER MENUUTJEEEEE */
+#hamburger {
+
+}
 /* LOGO IMG */
 
 #logo {
-	padding-left: 0.5em;
-	padding-right: 2.5em;
+	padding-left: 1.2em;
+	padding-right: 2.6em;
 	padding-bottom: 0.4em;
+
+
 
 }
 
@@ -186,12 +204,14 @@ header section:nth-of-type(2) form button {
 
 }
 
+/* .zoekVeld  */
+
 section form input {
 	height: 90%;
 	width: 100%;
 	border-radius: 1.2em;
 	border-width: 0.25em;
-	border-color: black;
+	border-color: var(--background-color-light);
 	padding: 0 1em 0 1em;
 	font-size: 1em;
 	min-width: 4.7em;
@@ -210,7 +230,7 @@ header section:last-of-type {
 
 header img {
 	height: 4em;
-	padding-left: 0.4em;
+	margin-left: 0.4em;
 }
 
 /* NAVBAR  */
@@ -221,23 +241,41 @@ header nav {
 	top: 0;
 	bottom: 0;
 	z-index: 1;
-	
 	transform: translateX(100%);
+	background-color: var(--background-color-light); 
 }
 
+.geopend {
+	transform: translateX(0);
+}
+
+.hamburGeopend {
+	position: absolute;
+	z-index: 10;
+	transform: rotate(90deg);
+	transition: 1s;
+	transition-timing-function: cubic-bezier(.83,-0.59,.45,1.01);
+	background-color: var(--background-color-light);
+
+}
+
+.hamburGeopend:focus {
+}
+
+
 nav ul {
-	display: flex;
 	background-color: var(--default-color);
+	margin-top: 8em;
+
 }
 
 nav ul li {
 	list-style-type: none;
 	/* height: 3em; */
 	flex-grow: 1;
-	text-align: center;
-	padding: 0;
-	padding-top: 1.3em;
-	padding-bottom: 1.3em;
+	padding: 3em 2em 3em 2em;
+	font-size: 1.3em;
+	background-color: var(--background-color-light);
 }
 
 nav ul li a {
@@ -251,7 +289,7 @@ nav a:link {
 }
 
 nav a:visited {
-	color: var(--text-color-dark);
+	color: var(--text-color-light);
 }
 
 nav a:hover {
@@ -269,82 +307,153 @@ nav a:active {
 main section {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-	gap: 2em;
-}
-
-
-section.productOverzichtTitel {
-
+	gap: 1em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
 }
 
 /* Grid container van alle product blokjes */
 .productOverzicht {
+
+}
+
+
+section.productOverzichtTitel {
 	
 }
+
 
 /* Grid contrainer van het blokje zelf */
 
 article {
 	display: grid;
-	grid-template-columns: 1fr 15%;
 	padding: 0;
-	border: .1em solid black;
-	
+	border: .1em solid var(--header-color-light);
+	height: min-content;
 }
 
-article.productContainer {
-	
-}
 
 article img {
-	grid-column-start: 1;
-	grid-row-start: 1;
 	border: .1em solid black;
-
+	justify-self: center;
+	max-width: 100%;
+	border-radius: 1em;
 }
 
-article section {
-	grid-column-start: 1;
-	grid-row-start: 2;
-	border: .1em solid black;
-	height: 3em;
+section article div {
+	display: flex;
+	align-items: center;
 }
 
+article p {
+	flex-grow: 1;
+}
 
 
 article button {
-	grid-column-start: 2;
-	grid-row-start: 2;
 	border: .1em solid black;
-	height: 3.6em;
+	height: 100%;
+	font-size: 2em;
+	color: black;
+	flex-grow: 1;
+	max-width: 1.35em;
 }
+
+
 
 /* MEDIA QUERIES */
 
-/* KLEINER DAN 500px */
+/* KLEINER DAN 600px */
 
 @media (max-width: 600px){
-
+	main section {
+		gap: 2em;
+	}
+	
+	
 	.zoekVeld {
 		display: none;
 	}
-
+	
 	.zoekKnop {
-		justify-self: flex-end;
+		margin-left: auto;
+	}
+	
+}
+
+@media (min-width: 600px){
+	
+	main, header, footer ul {
+		max-width: 90em;
+		margin-inline: auto;
+	}
+
+	div section:nth-of-type(2){
+		padding-left: 1em;
+	}
+	div section:nth-of-type(2) img {
+		padding-left: 1em;
 	}
 }
 
 /* TABLET FORMAAT OF GROTER */
 
-/* @media (min-width: 1000px){
+@media (min-width: 1000px){
 	header nav {
 		position: static;
 		transform: translateX(0);
 	}
+	
+	header nav ul {
+		display: flex;
+	}
+	
+	
 
 	
 	
-	header button {
-		display: none;
+	
+}
+
+@media (prefers-color-scheme: dark) {
+
+	:root {
+	--text-color-light: #fff;
+	--text-color-dark: #000;
+	--background-color-light: #000;
+	--background-color-dark: #fff;
+	--default-color: #3d3d3d;
+	--background-accent-color-light: #1b1b1b;
+	--background-accent-color-dark: #9f9f9f;
+	--header-color-light: #fff;
 	}
-} */
+
+	#hamburger {
+		background-color: var(--background-color-dark);
+	}
+
+	a {
+		color: var(--text-color-light);
+	}
+
+	p {
+		color: var(--accent-color);
+	}
+
+	form input{
+		/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
+		filter: invert(1);
+		color: var(--background-color-light);
+	}
+
+	header button {
+		/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert */
+		filter: invert(1);
+		background-color: var(--background-color-dark);
+	}
+
+	.productOverzicht article {
+		border: 0;
+	}
+
+}
