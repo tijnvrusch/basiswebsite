@@ -283,7 +283,10 @@ Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes k
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="./readme-images/screenshot-home.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="./readme-images/screenshot-home2.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="./readme-images/screenshot-home3.png" width="375px" alt="uitkomst opdracht 1">
   <img src="./readme-images/screenshot-contact.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="./readme-images/screenshot-contact2.png" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -293,12 +296,10 @@ Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes k
   - Dark mode: Na veel experimenteren met de header kleur in dark mode had ik bedacht dat ik de PNG's van de buttons in mijn header kan inverten, zodat de zwarte icoontjes wit zouden worden en de zoekbalk (en zijn border) ook goed aan zouden sluiten bij de rest van de dark mode styling van de pagina. Ik ging googlen en vond al snel dat je met filter: invert(1) een afbeelding, en zelfs een input veld en zijn border, kunt inverten.
   - Animaties: Ik heb de oh zo fijne site https://cubic-bezier.com/ ontdekt en snap nu de basics van hoe je bewegende transitions maakt in CSS. Ik heb bijvoorbeeld de animatie timing van mijn hamburger uitschuifmenu bewust afgestemd op de draai van het hamburger icoontje, zodat het menu pas uitschuift als het icoontje snel gaat draaien. Voor dit blok kon ik nog niets met CSS animaties. 
   - JavaScript: ik begrijp nu hoe je via JS een class aan een element toevoegt, verwijdert of togglet. Ik snap hoe je variabelen definieert (en verandert) en hoe je een eventListener toevoegt, maar voor de rest is JavaScript nog steeds een enge zee aan code waar ik nog weinig van begrijp.
-  - Verder heb ik een aantal kleine syntax dingetjes en denkfoutjes in mijn hoofd kunnen fixen, waardoor ik van die onzinnige foutjes maakte zoals het vergeten van een spatie in een selector omdat ik eerst niet eens wist dat die spatie uitmaakte. Ondanks dat dit blok zo snel ging, heb ik echt het gevoel dat ik veel beter ben geworden ik zowel het begrijpen van code als het schrijven zelf. Ik voel me nu zonder twijfel een betere webdeveloper, zeker rode piste niveau. Aan het begin van dit blok leek wat ik nu allemaal kan onmogelijk, maar ik ben heel blij met hoe dit korte blok uitgepakt heeft.
+  - Algemene progressie: Ik heb een aantal denkfoutjes in mijn hoofd kunnen fixen en een aantal kleine syntax dingetjes (die in mijn hoofd niet klopten), waardoor ik van die onzinnige foutjes maakte zoals het vergeten van een spatie in een selector omdat ik eerst niet eens wist dat die spatie uitmaakte. Ondanks dat dit blok zo snel ging, heb ik echt het gevoel dat ik veel beter ben geworden ik zowel het begrijpen van code als het schrijven zelf. Ik voel me nu zonder twijfel een betere webdeveloper, zeker rode piste niveau. Aan het begin van dit blok leek wat ik nu allemaal kan onmogelijk, maar ik ben heel blij met hoe dit korte blok uitgepakt heeft.
   
 
 
-
-  <img src="./readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
