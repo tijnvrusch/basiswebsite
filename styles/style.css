@@ -432,20 +432,20 @@ article button {
 
 #contactoverzichtTitel {
 	line-height: 1.5;
+	margin-left: 10em;
+}
+
+#contactoverzichtTitel h2 {
 }
 
 #contactOverzicht {
 	line-height: 1.5;
 	display:block;
-	padding: 0 8% 0 8%;
+	padding: 0 2.7em 0 2.7em;
 }
 
 #contactForm {
-
-}
-
-#contactOverzicht form {
-	margin: 0;
+	
 }
 
 #formFlex {
@@ -461,21 +461,21 @@ article button {
 }
 
 #formFlex div input {
-	height: 2em;
+	height: 3em;
 	min-width: 100%;
 }
 
 #formBlock {
 	display: block;
+	height: 3em;
+	padding-left: 0;
 }
 
 section#formFlex {
 	padding-left: 0
 }
 
-section#formBlock {
-	padding-left: 0;
-}
+
 
 
 #contactOverzicht form button {
@@ -484,7 +484,6 @@ section#formBlock {
 	padding: 0.4em;
 	font-weight: bold;
 	font-size: 1.1em;
-	margin-bottom: 30em;
 }
 
 #contactOverzicht form button:hover {
@@ -528,8 +527,10 @@ section#formBlock {
 
 #flexButton {
 	display: flex;
-	margin-top: 1.2em;
 	justify-content: space-between;
+	margin-top: 47em;
+	padding-bottom: 6em;
+
 }
 
 #flexButton button {
@@ -683,7 +684,7 @@ section#formBlock {
 		color: var(--background-color-dark);
 		background-color: var(--background-color-dark);
 		border-color: var(--background-color-light);
-		/* HIER FILTER: INVERT(0) WEBHALEN FIXTE THE ISSUE  */
+		/* HIER FILTER: INVERT(0) WEBHALEN FIXTE DE ISSUE OMG ZO VEEL WASTED TIME */
 		/* filter: invert(0); */
 	}
 	
