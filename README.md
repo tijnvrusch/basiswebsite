@@ -282,19 +282,19 @@ Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes k
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="./readme-images/screenshot-home.png" width="375px" alt="uitkomst opdracht 1">
-  <img src="./readme-images/screenshot-home2.png" width="375px" alt="uitkomst opdracht 1">
-  <img src="./readme-images/screenshot-home3.png" width="375px" alt="uitkomst opdracht 1">
-  <img src="./readme-images/screenshot-contact.png" width="375px" alt="uitkomst opdracht 1">
-  <img src="./readme-images/screenshot-contact2.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="./readme-images/screenshot-home.png" width="375px" alt="home">
+  <img src="./readme-images/screenshot-home2.png" width="375px" alt="home2">
+  <img src="./readme-images/screenshot-home3.png" width="375px" alt="home3">
+  <img src="./readme-images/screenshot-contact.png" width="375px" alt="contact">
+  <img src="./readme-images/screenshot-contact2.png" width="375px" alt="contact">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   
-  - Toegankelijkheid: De buttons en zoekbalk zijn gemakkelijk te vinden met tab én je kunt zelfs naar de content van de pagina skippen met een skiplink. Ik heb bij de kleurkeuze ook rekening gehouden met een hoog contrast voor onder andere slechtzienden. Ik heb nu ook een beter beeld van wat je als ontwerper kunt doen om mensen met bepaalde beperkingen te helpen en na de toegankelijkheidstesten in de les begrijp ik ook beter tegen wat voor problemen deze mensen aan zullen lopen. Ook heb ik er bijvoorbeeld voor gekozen dat hele footer klikbaar is, en niet alleen het kruisje rechtsboven. 
+  - Toegankelijkheid: De buttons en zoekbalk zijn gemakkelijk te vinden met tab (en dus ook screen readers) én je kunt zelfs naar de content van de pagina skippen met een skiplink. Ik heb bij de kleurkeuze ook rekening gehouden met een hoog contrast voor onder andere slechtzienden. Ik heb nu ook een beter beeld van wat je als ontwerper kunt doen om mensen met bepaalde beperkingen zoals bijvoorbeeld kleurenblindheid te helpen want na de toegankelijkheidstesten in de les begrijp ik ook beter tegen wat voor problemen deze mensen aan zullen lopen. Ook heb ik er bijvoorbeeld voor gekozen dat hele footer klikbaar is, en niet alleen het kruisje rechtsboven. 
   - Responsiveness: Ik ben erg trots op hoe responsive ik mijn website heb kunnen maken met behulp van flexbox. Ik heb deze 5 weken echt super veel geleerd, vooral over flexbox, grid, positioning, states en media queries (en ik snap nu vooral ook hoe je   min-width en max-width gebruikt voor responsiveness op alle apparaten)!
   - Dark mode: Na veel experimenteren met de header kleur in dark mode had ik bedacht dat ik de PNG's van de buttons in mijn header kan inverten, zodat de zwarte icoontjes wit zouden worden en de zoekbalk (en zijn border) ook goed aan zouden sluiten bij de rest van de dark mode styling van de pagina. Ik ging googlen en vond al snel dat je met filter: invert(1) een afbeelding, en zelfs een input veld en zijn border, kunt inverten.
-  - Animaties: Ik heb de oh zo fijne site https://cubic-bezier.com/ ontdekt en snap nu de basics van hoe je bewegende transitions maakt in CSS. Ik heb bijvoorbeeld de animatie timing van mijn hamburger uitschuifmenu bewust afgestemd op de draai van het hamburger icoontje, zodat het menu pas uitschuift als het icoontje snel gaat draaien. Voor dit blok kon ik nog niets met CSS animaties. 
+  - Animaties: In de les leerden we hoe handig de oh zo fijne site https://cubic-bezier.com/ is en ik snap nu de basics van hoe je bewegende transitions maakt in CSS. Ik heb bijvoorbeeld de animatie timing van mijn hamburger uitschuifmenu bewust afgestemd op de draai van het hamburger icoontje, zodat het menu pas uitschuift als het icoontje snel gaat draaien. Dit maakt het meer één vloeiende beweging, in plaats van dat er 2 dingen los van elkaar gebeuren. Aan het begin van dit blok kon ik nog helemaal niets met animaties in CSS. 
   - JavaScript: ik begrijp nu hoe je via JS een class aan een element toevoegt, verwijdert of togglet. Ik snap hoe je variabelen definieert (en verandert) en hoe je een eventListener toevoegt, maar voor de rest is JavaScript nog steeds een enge zee aan code waar ik nog weinig van begrijp.
   - Algemene progressie: Ik heb een aantal denkfoutjes in mijn hoofd kunnen fixen en een aantal kleine syntax dingetjes (die in mijn hoofd niet klopten), waardoor ik van die onzinnige foutjes maakte zoals het vergeten van een spatie in een selector omdat ik eerst niet eens wist dat die spatie uitmaakte. Ondanks dat dit blok zo snel ging, heb ik echt het gevoel dat ik veel beter ben geworden ik zowel het begrijpen van code als het schrijven zelf. Ik voel me nu zonder twijfel een betere webdeveloper, zeker rode piste niveau. Aan het begin van dit blok leek wat ik nu allemaal kan onmogelijk, maar ik ben heel blij met hoe dit korte blok uitgepakt heeft.
   
@@ -304,11 +304,11 @@ Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes k
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes <br>
-  - Ik heb uren, maar dan ook uren (ik denk wel 6 uur) gestruggled met één klein probleem: op de contactpagina kwamen de form fields om de een of andere reden steeds voor het hamburger menu als die uitgeklapt is, alsof hij een grotere z-index heeft o.i.d. Na uren proberen, tevergeefs googlen, klasgenoten vragen, kwam ik erachter dat het in mijn inspector ineens werkte als de filter: invert(1) én transform:translateX(0) allebei uit stonden... Ik had hiervoor al mijn hele code in stukken commentaar gemaakt om te kijken of ik op die manier de fout kon vinden, maar deze 2 properties stonden op een heel andere plek in het document...
-  - Een dark mode button toevoegen, hier liep ik stuk op de JavaScript. Ik denk dat ik qua HTML / CSS nu zeker wel op rood niveau zit, maar met JS kom ik nog niet veel verder dan dat ene trucje met classList.toggle. Lijkt me wel leuk om binnenkort op te pakken, want ik zie wel in hoe belangrijk (en leuk) het is als je een pagina nog interactiever kan maken.
-  - Ik wilde misschien ook nog iets toevoegen als een coole image flip, lasers, of bijvoorbeeld een animatie als je op een + knopje klikt, maar daar ben ik uiteindelijk niet aan toegekomen. 
-
   <img src="./readme-images/IMG_0700.jpg" width="375px" alt="bummer">
+  - Ik heb uren, maar dan ook uren (ik denk wel 6 uur) gestruggled met één klein probleem: op de contactpagina kwamen de form fields om de een of andere reden steeds voor het hamburger menu als die uitgeklapt is, alsof hij een grotere z-index heeft o.i.d. Na uren proberen, tevergeefs googlen, klasgenoten vragen, kwam ik erachter dat het in mijn inspector ineens werkte als de filter: invert(1) én transform:translateX(0) allebei uit stonden... Ik had hiervoor al mijn hele code in stukken commentaar gemaakt om te kijken of ik op die manier de fout kon vinden, maar deze 2 properties stonden op een heel andere plek in het document...
+  - Een dark mode button toevoegen, hier liep ik stuk op de JavaScript. Ik denk dat ik qua HTML / CSS nu zeker wel op rood niveau zit, maar met JS kom ik nog niet veel verder dan dat ene trucje met classList.toggle. Het lijkt me wel leuk om dat in een toekomstig project op te pakken, want ik zie wel in hoe belangrijk (en leuk) het is als je een pagina nog veel interactiever kan maken.
+  - Ik wilde eerst misschien nog iets cools toevoegen zoals een image flip, lasers, of bijvoorbeeld een animatie als je op een + knopje klikt, maar daar ben ik uiteindelijk niet aan toegekomen. 
+
 </details>
 
 
