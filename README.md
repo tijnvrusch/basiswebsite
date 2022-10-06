@@ -155,10 +155,9 @@ Bevindingen symposium 12 september
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - ik heb wat tips  gekregen voor hoe ik beter mijn sections kon indelen, ik had eerst overal waar ik flexbox of grid gebruikte een ul met een li erin maar dat bleek helemaal niet nodig te zijn.
+  - er stond een dubbele selector in mijn code waardoor de hele header ineens niet meer werkte, thanks to de hulpstudenten voor het vinden van de fout!
+  - ik moet nog veel doen aan de main content area van de pagina, maar ik wil het liefst eerst de header (bijna) af hebben voordat ik doorga, om dubbel werk te voorkomen als ik zometeen aan de contactpagina begin.
 
 </details>
 
@@ -174,9 +173,9 @@ Bevindingen symposium 12 september
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-Ik doe op de een of andere manier iets fout bij het linken naar mijn img elementen. Verder moet er nog veel gebeuren aan mijn website. <br>
-Ik moet nog veel doen aan mijn basic CSS indeling, maar ik boek wel goeie progressie met de navbar. Die werkt nu volledig responsive met een zoekbalk die meebeweegt en een hamburger die verdwijnt op desktop size. <br>
-Ik wil, als ik de CSS wat beter gefixt heb, een auto dark mode en een hamburger menu met animaties toevoegen <br>
+- Ik doe op de een of andere manier iets fout bij het linken naar mijn img elementen. Verder moet er nog veel gebeuren aan mijn website. <br>
+- Ik moet nog veel doen aan mijn basic CSS indeling, maar ik boek wel goeie progressie met de navbar. Die werkt nu volledig responsive met een zoekbalk die meebeweegt en een hamburger die verdwijnt op desktop size. <br>
+- Ik wil, als ik de CSS wat beter gefixt heb, een auto dark mode en een hamburger menu met animaties toevoegen <br>
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -189,11 +188,7 @@ Ik wil, als ik de CSS wat beter gefixt heb, een auto dark mode en een hamburger 
 
 Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes komt het niet uit.
 
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - 
-- ...
 
 </details>
 
@@ -294,10 +289,11 @@ Doe/begrijp ik iets verkeerd met semantisch correct tabben? In product blokjes k
   ### Dit ging goed/Heb ik geleerd: 
   
   - Toegankelijkheid: De buttons en zoekbalk zijn gemakkelijk te vinden met tab én je kunt zelfs naar de content van de pagina skippen met een skiplink. Ik heb bij de kleurkeuze ook rekening gehouden met een hoog contrast voor onder andere slechtzienden. Ik heb nu ook een beter beeld van wat je als ontwerper kunt doen om mensen met bepaalde beperkingen te helpen en na de toegankelijkheidstesten in de les begrijp ik ook beter tegen wat voor problemen deze mensen aan zullen lopen. Ook heb ik er bijvoorbeeld voor gekozen dat hele footer klikbaar is, en niet alleen het kruisje rechtsboven. 
-  - Responsiveness: Ik ben erg trots op hoe responsive ik mijn website heb kunnen maken met behulp van flexbox. Ik heb deze 5 weken echt super veel geleerd, vooral over flexbox, grid, positioning en media queries (en ik snap nu vooral ook hoe je   min-width en max-width gebruikt voor responsiveness op alle apparaten)!
+  - Responsiveness: Ik ben erg trots op hoe responsive ik mijn website heb kunnen maken met behulp van flexbox. Ik heb deze 5 weken echt super veel geleerd, vooral over flexbox, grid, positioning, states en media queries (en ik snap nu vooral ook hoe je   min-width en max-width gebruikt voor responsiveness op alle apparaten)!
   - Dark mode: Na veel experimenteren met de header kleur in dark mode had ik bedacht dat ik de PNG's van de buttons in mijn header kan inverten, zodat de zwarte icoontjes wit zouden worden en de zoekbalk (en zijn border) ook goed aan zouden sluiten bij de rest van de dark mode styling van de pagina. Ik ging googlen en vond al snel dat je met filter: invert(1) een afbeelding, en zelfs een input veld en zijn border, kunt inverten.
   - Animaties: Ik heb de oh zo fijne site https://cubic-bezier.com/ ontdekt en snap nu de basics van hoe je bewegende transitions maakt in CSS. Ik heb bijvoorbeeld de animatie timing van mijn hamburger uitschuifmenu bewust afgestemd op de draai van het hamburger icoontje, zodat het menu pas uitschuift als het icoontje snel gaat draaien. Voor dit blok kon ik nog niets met CSS animaties. 
   - JavaScript: ik begrijp nu hoe je via JS een class aan een element toevoegt, verwijdert of togglet. Ik snap hoe je variabelen definieert (en verandert) en hoe je een eventListener toevoegt, maar voor de rest is JavaScript nog steeds een enge zee aan code waar ik nog weinig van begrijp.
+  - Verder heb ik een aantal kleine syntax dingetjes en denkfoutjes in mijn hoofd kunnen fixen, waardoor ik van die onzinnige foutjes maakte zoals het vergeten van een spatie in een selector omdat ik eerst niet eens wist dat die spatie uitmaakte. Ondanks dat dit blok zo snel ging, heb ik echt het gevoel dat ik veel beter ben geworden ik zowel het begrijpen van code als het schrijven zelf. Ik voel me nu zonder twijfel een betere webdeveloper, zeker rode piste niveau. Aan het begin van dit blok leek wat ik nu allemaal kan onmogelijk, maar ik ben heel blij met hoe dit korte blok uitgepakt heeft.
   
 
 
